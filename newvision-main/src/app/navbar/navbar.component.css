@@ -1,0 +1,79 @@
+/* Estilos base */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-contacto {
+    background: #2DC3C9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Ocultar menú en móviles */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Clase que abre el menú */
+    .menu-abierto {
+        display: flex;
+    }
+}

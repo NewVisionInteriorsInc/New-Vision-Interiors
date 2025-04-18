@@ -1,0 +1,21 @@
+<header>
+    <nav>
+        <div class="logo">
+            <img src="/NEW-VISION-INTERIORS.png" alt="Logo">
+        </div>
+
+        <!-- Botón Hamburguesa -->
+        <button class="menu-toggle" (click)="menuAbierto = !menuAbierto">
+            ☰
+        </button>
+
+        <!-- Menú de Navegación -->
+        <div [class.menu-abierto]="menuAbierto" class="nav-links">
+            <a routerLink="/" (click)="menuAbierto = false">Home</a>
+            <a routerLink="/banos" (click)="menuAbierto = false">Bathrooms</a>
+            <a routerLink="/pisos" (click)="menuAbierto = false">Flooring</a>
+            <a routerLink="/cocina" (click)="menuAbierto = false">Kitchens</a>
+            <a routerLink="/contactos" class="btn-contacto" (click)="menuAbierto = false">Contact us</a>
+        </div>
+    </nav>
+</header>
